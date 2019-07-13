@@ -13,6 +13,25 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.lightGreen,
+        appBar: AppBar(
+          backgroundColor: Colors.amber,
+          title: Text('Demo'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.add),
+              onPressed: (){
+                print('add button pressed');
+              },
+
+            ),
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: (){
+                print('search button pressed');
+              },
+            ),
+          ],
+        ),
         body: Center(
           child: Text(
             'Learning Flutter syntax step by step.. demo of text property',
